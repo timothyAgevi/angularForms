@@ -8,7 +8,7 @@ import { UserSettings } from './user-settings';
 })
 export class DataService {
 
-  constructor() { }
+  constructor(private dataService:DataService) { }
   postUserSettingsForm(userSettings:UserSettings):Observable<UserSettings>{
 return of(userSettings);
   }
