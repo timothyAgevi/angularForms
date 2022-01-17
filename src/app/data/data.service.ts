@@ -11,7 +11,7 @@ import { UserSettings } from './user-settings';
 export class DataService {
 
   constructor(private http:HttpClient) { }
-  postUserSettingsForm(userSettings:UserSettings):Observable<UserSettings>{
+  postUserSettingsForm(userSettings:UserSettings):Observable<any>{
    return this.http.post('url',userSettings);
     // return of(userSettings);
   }
