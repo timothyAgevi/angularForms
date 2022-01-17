@@ -34,7 +34,7 @@ export class UserSettingsFormComponent implements OnInit{
     console.log( 'in onsubmit' ,form.valid)
     this.dataService.postUserSettingsForm(this.userSettings).subscribe(
       result=>console.log('sucess',result),
-      error => console.log('error',error)
+      error => this.onHttpError(error)
       );
       
     
