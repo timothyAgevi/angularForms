@@ -23,6 +23,7 @@ export class UserSettingsFormComponent implements OnInit{
   userSettings:UserSettings={...this.originalUserSettings}
   postError= false;
   postErrorMessage='';
+  
   constructor(private dataService:DataService){}
   
   ngOnInit(): void {
