@@ -1,6 +1,7 @@
-export interface UserSetings{
+export interface UserSettings {
+    emailOffers:boolean,
     name:string,
-    email:string,
     interfaceStyles:string,
+    subscriptionType:string,
     notes:string
 }
