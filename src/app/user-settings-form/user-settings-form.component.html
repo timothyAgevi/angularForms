@@ -7,7 +7,7 @@
      [class.field-error]="form.submitted && form.invalid"
      >
      
-     <div [hidden]="nameField.valid ||nameField.untouched"
+     <div [hidden]="!form.submitted ||form.valid"
       class="alert alert-danger">Enter Name
            </div>
           </div>
