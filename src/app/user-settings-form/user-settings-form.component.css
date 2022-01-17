@@ -1,4 +1,4 @@
-fieldError{
+field-error{
     /*replaced .ng-invalid :not(form).ng-touched  
     /* no spaces on line1 */
     border: 1px solid red;
