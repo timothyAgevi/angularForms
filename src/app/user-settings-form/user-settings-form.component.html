@@ -4,7 +4,7 @@
     <label for="name">Name</label>
     <input type="text" id="name"  name= "name"class="form-control"
      [(ngModel)]="userSettings.name" required #nameField="ngModel" 
-     [class.field-error]="form.submitted && form.invalid"
+     [class.field-error]="form.submitted && nameField.invalid"
      >
      
      <div [hidden]="!form.submitted ||form.valid"
