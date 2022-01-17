@@ -1,3 +1,4 @@
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -9,9 +10,9 @@ import { UserSettings } from './user-settings';
 })
 export class DataService {
 
-  constructor(private Http:HttpClient) { }
+  constructor(private http:HttpClient) { }
   postUserSettingsForm(userSettings:UserSettings):Observable<UserSettings>{
-
+   return this.http.post('url',userSettings);
     // return of(userSettings);
   }
 }
