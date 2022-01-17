@@ -9,7 +9,7 @@ import { UserSettings } from '../data/user-settings';
   styleUrls: ['./user-settings-form.component.css']
 })
 export class UserSettingsFormComponent implements OnInit{
-  userSetting:UserSettings={
+  userSettings:UserSettings={
     emailOffers:true,
     name:'tim',
     interfaceStyles:'dark',
