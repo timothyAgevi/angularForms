@@ -21,6 +21,8 @@ export class UserSettingsFormComponent implements OnInit{
   }
   //copy of originalUserSettings
   userSettings:UserSettings={...this.originalUserSettings}
+  postError= false;
+  postErrorMessage='';
   constructor(private dataService:DataService){}
   
   ngOnInit(): void {
@@ -31,7 +33,9 @@ export class UserSettingsFormComponent implements OnInit{
     console.log(`in onBlur`, field.valid)
   }
   onHttpError(errorResponse:any){
-    
+    console.log('error :',errorResponse);
+    this.postError=true;
+    this.postErrorMessage=errorResponse.error.errorMessage;
   }
   onSubmit(form:NgForm){
     console.log( 'in onsubmit' ,form.valid)
