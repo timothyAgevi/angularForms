@@ -12,7 +12,7 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
   postUserSettingsForm(userSettings:UserSettings):Observable<any>{
-   return this.http.post('url',userSettings);
+   return this.http.post('https://putsreq.com/m8cjH6bV9wX2sqvWhkm4',userSettings);
     // return of(userSettings);
   }
 }
