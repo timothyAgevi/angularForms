@@ -46,7 +46,7 @@
       <label for="subscriptionType">Subscriotion Type</label>
       <select class="form-control"name="subscriptionType" id="subscriptionType"
       [(ngModel)]="userSettings.subscriptionType">
-        <option value="" *ngForm="let type of subscriptionType">
+        <option value="" *ngFor="let type of subscriptionType |async">
           {{type}}
         </option>
           
