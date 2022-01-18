@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { NgForm, NgModel } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { Observable, single } from 'rxjs';
 import { DataService } from '../data/data.service';
 import { UserSettings } from '../data/user-settings';
 
@@ -20,7 +20,8 @@ export class UserSettingsFormComponent implements OnInit{
     notes:''
     
   }
-  singleModel="on";
+  singleModel='On';
+  
   //copy of originalUserSettings
   userSettings:UserSettings={...this.originalUserSettings}
   postError= false;
