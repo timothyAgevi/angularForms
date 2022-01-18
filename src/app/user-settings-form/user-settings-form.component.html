@@ -7,11 +7,19 @@
      (blur)="onBlur(nameField)"
      [class.field-error]="form.submitted && nameField.invalid"
      >
-     
      <div [hidden]="!form.submitted ||form.valid"
       class="alert alert-danger">Enter Name
            </div>
           </div>
+          <button type="button" class="btn btn-primary"
+        [(ngModel)]="singleModel" btnCheckbox
+        [btnCheckboxTrue]="1" [btnCheckboxFalse]="0">
+  Single Toggle
+</button>
+
+
+
+
     <div class="form-check form-group">
         <input class="form-check-input" type="checkbox" name="emailOffers" id="emailOffers"
         [(ngModel)]="userSettings.emailOffers">

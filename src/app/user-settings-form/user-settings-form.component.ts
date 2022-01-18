@@ -20,6 +20,7 @@ export class UserSettingsFormComponent implements OnInit{
     notes:''
     
   }
+  singleModel="on";
   //copy of originalUserSettings
   userSettings:UserSettings={...this.originalUserSettings}
   postError= false;
