@@ -40,8 +40,9 @@ export class UserSettingsFormComponent implements OnInit{
   }
   onSubmit(form:NgForm){
     console.log( 'in onsubmit' ,form.valid)
-    this.dataService.postUserSettingsForm(this.userSettings).subscribe(
-      result=>console.log('sucess',result),
+    this.dataService.postUserSettingsForm(this.userSettings)
+    .subscribe(
+      result=>console.log('success',result),
       error => this.onHttpError(error)
       );
       
