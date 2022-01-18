@@ -11,7 +11,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons'
   declarations: [
     AppComponent,
     UserSettingsFormComponent,
-    
+    ButtonsModule
     
   ],
   imports: [
